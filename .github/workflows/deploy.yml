@@ -104,6 +104,7 @@ jobs:
            reviewApiKey=${{ secrets.reviewApiKey }}
            sqlServerAdministratorLogin=${{ inputs.sqlServerAdministratorLogin }}
            sqlServerAdministratorLoginPassword=${{ secrets.sqlServerAdministratorLoginPassword }}
+
   deploy-website:
     needs: deploy
     environment: ${{ inputs.environmentType }}
